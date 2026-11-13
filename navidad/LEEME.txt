@@ -1,0 +1,30 @@
+PROYECTO NAVIDEÑO CON CONTADOR DE VISITAS
+
+Archivos:
+- navidad.php
+- pesebre.png
+- estrella-belen.png
+- nino-jesus.png
+- contador_visitas.txt
+- musica-navidad.mp3 (debes copiar tu archivo de música aquí)
+
+INSTALACIÓN
+1. Copia todos los archivos en la misma carpeta dentro de htdocs (XAMPP), www (WAMP) o la carpeta pública de tu servidor.
+2. Asegúrate de que PHP pueda escribir/modificar contador_visitas.txt.
+3. Abre la página mediante el servidor, por ejemplo http://localhost/navidad/navidad.php.
+4. Publica el enlace de esa página para generar el QR. No uses el archivo local directamente (file://).
+
+CÓMO FUNCIONA
+- Cuenta una visita por sesión del navegador, no cada recarga.
+- No guarda nombres ni direcciones IP.
+- Si la persona vuelve en otra sesión o navegador, puede volver a contar.
+- El contador requiere PHP y almacenamiento persistente en el servidor. No funciona abriendo el PHP como archivo local ni en un hosting estático.
+
+CÓMO REINICIAR
+1. Abre contador_visitas.txt con Bloc de notas.
+2. Borra el número y escribe 0.
+3. Guarda el archivo.
+4. Para probar desde el mismo navegador, abre una ventana privada o inicia una sesión nueva; la sesión actual ya fue contabilizada.
+
+IMPORTANTE
+El contador es una estimación de sesiones/visitantes, no una identificación exacta de personas. Algunos navegadores o sistemas de vista previa de enlaces pueden generar solicitudes adicionales. Para el uso normal del QR, ofrece una aproximación de cuántas personas abrieron la felicitación.
